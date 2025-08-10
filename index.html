@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Coffee - Craft Your Ideal Brew</title>
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="icon" href="favicon/favicon.ico">
     
     <!-- React y ReactDOM desde CDN -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -204,9 +211,9 @@
                     name: 'V60', 
                     ratio: 15, 
                     time: '2:30-3:00',
-                    grind: 'Medio-fino',
+                    grind: 'Medium-fine',
                     temp: '92-96°C',
-                    description: 'Filtro cónico con surcos espirales',
+                    description: 'Cone filter with spiral grooves',
                     icon: Icons.Waves,
                     color: 'from-amber-400 to-orange-500'
                 },
@@ -214,9 +221,9 @@
                     name: 'Chemex', 
                     ratio: 16, 
                     time: '4:00-5:00',
-                    grind: 'Medio-grueso',
+                    grind: 'Medium-coarse',
                     temp: '93-96°C',
-                    description: 'Filtro grueso, cuerpo limpio',
+                    description: 'Thick filter, clean body',
                     icon: Icons.Crown,
                     color: 'from-blue-400 to-cyan-500'
                 },
@@ -224,9 +231,9 @@
                     name: 'French Press', 
                     ratio: 12, 
                     time: '4:00',
-                    grind: 'Grueso',
+                    grind: 'Coarse',
                     temp: '93-96°C',
-                    description: 'Inmersión completa',
+                    description: 'Full immersion',
                     icon: Icons.Timer,
                     color: 'from-red-400 to-pink-500'
                 },
@@ -234,9 +241,9 @@
                     name: 'AeroPress', 
                     ratio: 14, 
                     time: '1:30-2:30',
-                    grind: 'Fino-medio',
+                    grind: 'Fine-medium',
                     temp: '80-92°C',
-                    description: 'Presión y filtro micro',
+                    description: 'Pressure and micro filter',
                     icon: Icons.Star,
                     color: 'from-purple-400 to-violet-500'
                 },
@@ -244,9 +251,9 @@
                     name: 'Pour Over', 
                     ratio: 15, 
                     time: '3:00-4:00',
-                    grind: 'Medio',
+                    grind: 'Medium',
                     temp: '92-96°C',
-                    description: 'Vertido manual controlado',
+                    description: 'Controlled manual pour',
                     icon: Icons.Droplets,
                     color: 'from-teal-400 to-emerald-500'
                 },
@@ -254,9 +261,9 @@
                     name: 'Espresso', 
                     ratio: 2, 
                     time: '25-30s',
-                    grind: 'Muy fino',
+                    grind: 'Very fine',
                     temp: '90-94°C',
-                    description: 'Presión alta concentrada',
+                    description: 'High concentrated pressure',
                     icon: Icons.Zap,
                     color: 'from-yellow-400 to-amber-500'
                 }
@@ -270,7 +277,7 @@
                         ratio: '1:16.7',
                         coffee: '30g',
                         water: '500g',
-                        steps: ['Bloom 60g agua x 45s', 'Vertido hasta 300g', 'Vertido final hasta 500g'],
+                        steps: ['Bloom 60g water x 45s', 'Pour to 300g', 'Final pour to 500g'],
                         source: 'YouTube',
                         rating: 4.9
                     },
@@ -280,19 +287,19 @@
                         ratio: '1:15',
                         coffee: '20g',
                         water: '300g',
-                        steps: ['40% agua en 2 vertidos', '60% agua en 3 vertidos', 'Control acidez/dulzor'],
+                        steps: ['40% water in 2 pours', '60% water in 3 pours', 'Control acidity/sweetness'],
                         source: 'World Champion 2016',
                         rating: 4.8
                     }
                 ],
                 chemex: [
                     {
-                        name: 'Chemex Clásico',
+                        name: 'Classic Chemex',
                         author: 'Chemex Corp',
                         ratio: '1:15',
                         coffee: '42g',
                         water: '630g',
-                        steps: ['Pre-infusión 30s', 'Vertidos circulares lentos', 'Tiempo total 5-6 min'],
+                        steps: ['Pre-infusion 30s', 'Slow circular pours', 'Total time 5-6 min'],
                         source: 'Official Guide',
                         rating: 4.7
                     },
@@ -302,7 +309,7 @@
                         ratio: '1:17',
                         coffee: '50g',
                         water: '850g',
-                        steps: ['Bloom 30s con 100g agua', 'Vertidos de 150g cada 45s', 'Total 4-5 min'],
+                        steps: ['Bloom 30s with 100g water', '150g pours every 45s', 'Total 4-5 min'],
                         source: 'Blue Bottle Guide',
                         rating: 4.6
                     }
@@ -314,7 +321,7 @@
                         ratio: '1:15',
                         coffee: '30g',
                         water: '450g',
-                        steps: ['Inmersión 4 min', 'Romper costra', 'Esperar 5-8 min', 'Servir sin presionar'],
+                        steps: ['Immersion 4 min', 'Break crust', 'Wait 5-8 min', 'Serve without pressing'],
                         source: 'YouTube',
                         rating: 4.9
                     },
@@ -324,7 +331,7 @@
                         ratio: '1:12',
                         coffee: '56g',
                         water: '680g',
-                        steps: ['Agua a 200°F', 'Inmersión 4 min', 'Revolver 30s', 'Presionar lentamente'],
+                        steps: ['Water at 200°F', 'Immersion 4 min', 'Stir 30s', 'Press slowly'],
                         source: 'Counter Culture',
                         rating: 4.5
                     }
@@ -336,7 +343,7 @@
                         ratio: '1:14',
                         coffee: '18g',
                         water: '250g',
-                        steps: ['Método invertido', 'Inmersión 1:30', 'Presión lenta 30s'],
+                        steps: ['Inverted method', 'Immersion 1:30', 'Slow press 30s'],
                         source: 'World Champion',
                         rating: 4.6
                     },
@@ -346,7 +353,7 @@
                         ratio: '1:16',
                         coffee: '17g',
                         water: '270g',
-                        steps: ['Café en cámara', 'Agua caliente', 'Revolver 10s', 'Presionar 20s'],
+                        steps: ['Coffee in chamber', 'Hot water', 'Stir 10s', 'Press 20s'],
                         source: 'Official Recipe',
                         rating: 4.4
                     }
@@ -358,7 +365,7 @@
                         ratio: '1:16',
                         coffee: '22g',
                         water: '350g',
-                        steps: ['Bloom 45s', '3 vertidos pausados', 'Mantener nivel agua'],
+                        steps: ['Bloom 45s', '3 paused pours', 'Maintain water level'],
                         source: 'Official Method',
                         rating: 4.5
                     },
@@ -368,7 +375,7 @@
                         ratio: '1:15',
                         coffee: '25g',
                         water: '375g',
-                        steps: ['Bloom 30s', 'Vertidos concéntricos', '2:30 tiempo total'],
+                        steps: ['Bloom 30s', 'Concentric pours', '2:30 total time'],
                         source: 'Onyx Coffee Lab',
                         rating: 4.7
                     }
@@ -380,7 +387,7 @@
                         ratio: '1:2.5',
                         coffee: '20g',
                         water: '50g',
-                        steps: ['Molienda fina', 'Distribución uniforme', 'Tamping 15kg', '25-30s extracción'],
+                        steps: ['Fine grind', 'Even distribution', 'Tamping 15kg', '25-30s extraction'],
                         source: 'World Champion',
                         rating: 4.8
                     },
@@ -390,7 +397,7 @@
                         ratio: '1:2',
                         coffee: '18g',
                         water: '36g',
-                        steps: ['Molienda extra fina', 'Pre-infusión 3s', 'Extracción 25s', 'Crema dorada'],
+                        steps: ['Extra fine grind', 'Pre-infusion 3s', 'Extraction 25s', 'Golden crema'],
                         source: 'La Marzocco',
                         rating: 4.6
                     }
@@ -400,76 +407,76 @@
             const coffeeRecipes = {
                 hot: [
                     {
-                        name: 'Latte Vainilla',
-                        ingredients: ['240ml leche', '60ml espresso', '15ml jarabe vainilla'],
-                        steps: ['Preparar espresso doble', 'Calentar y espumar leche', 'Añadir jarabe', 'Verter leche sobre espresso'],
-                        temp: 'Caliente',
-                        difficulty: 'Fácil'
+                        name: 'Vanilla Latte',
+                        ingredients: ['240ml milk', '60ml espresso', '15ml vanilla syrup'],
+                        steps: ['Prepare double espresso', 'Heat and foam milk', 'Add syrup', 'Pour milk over espresso'],
+                        temp: 'Hot',
+                        difficulty: 'Easy'
                     },
                     {
-                        name: 'Cappuccino Clásico',
-                        ingredients: ['180ml leche', '60ml espresso', 'Canela al gusto'],
-                        steps: ['Preparar espresso', 'Espumar leche hasta textura sedosa', 'Verter 1/3 leche y 2/3 espuma', 'Espolvorear canela'],
-                        temp: 'Caliente',
-                        difficulty: 'Medio'
+                        name: 'Classic Cappuccino',
+                        ingredients: ['180ml milk', '60ml espresso', 'Cinnamon to taste'],
+                        steps: ['Prepare espresso', 'Foam milk to silky texture', 'Pour 1/3 milk and 2/3 foam', 'Sprinkle cinnamon'],
+                        temp: 'Hot',
+                        difficulty: 'Medium'
                     },
                     {
                         name: 'Americano',
-                        ingredients: ['240ml agua caliente', '60ml espresso'],
-                        steps: ['Preparar espresso doble', 'Añadir agua caliente', 'Servir inmediatamente'],
-                        temp: 'Caliente',
-                        difficulty: 'Fácil'
+                        ingredients: ['240ml hot water', '60ml espresso'],
+                        steps: ['Prepare double espresso', 'Add hot water', 'Serve immediately'],
+                        temp: 'Hot',
+                        difficulty: 'Easy'
                     },
                     {
                         name: 'Mocha',
-                        ingredients: ['240ml leche', '60ml espresso', '30ml chocolate', 'Crema batida'],
-                        steps: ['Mezclar chocolate con espresso', 'Calentar leche', 'Combinar todo', 'Decorar con crema'],
-                        temp: 'Caliente',
-                        difficulty: 'Medio'
+                        ingredients: ['240ml milk', '60ml espresso', '30ml chocolate', 'Whipped cream'],
+                        steps: ['Mix chocolate with espresso', 'Heat milk', 'Combine everything', 'Decorate with cream'],
+                        temp: 'Hot',
+                        difficulty: 'Medium'
                     },
                     {
-                        name: 'Macchiato Caramelo',
-                        ingredients: ['60ml espresso', '15ml jarabe caramelo', '120ml leche', 'Caramelo líquido'],
-                        steps: ['Preparar espresso', 'Añadir jarabe', 'Espumar poca leche', 'Decorar con caramelo'],
-                        temp: 'Caliente',
-                        difficulty: 'Difícil'
+                        name: 'Caramel Macchiato',
+                        ingredients: ['60ml espresso', '15ml caramel syrup', '120ml milk', 'Liquid caramel'],
+                        steps: ['Prepare espresso', 'Add syrup', 'Foam little milk', 'Decorate with caramel'],
+                        temp: 'Hot',
+                        difficulty: 'Hard'
                     }
                 ],
                 cold: [
                     {
                         name: 'Cold Brew',
-                        ingredients: ['100g café molido grueso', '1L agua fría'],
-                        steps: ['Mezclar café y agua', 'Dejar reposar 12-24h', 'Filtrar', 'Servir con hielo'],
-                        temp: 'Frío',
-                        difficulty: 'Fácil'
+                        ingredients: ['100g coarse ground coffee', '1L cold water'],
+                        steps: ['Mix coffee and water', 'Let steep 12-24h', 'Filter', 'Serve with ice'],
+                        temp: 'Cold',
+                        difficulty: 'Easy'
                     },
                     {
                         name: 'Iced Latte',
-                        ingredients: ['240ml leche fría', '60ml espresso', 'Hielo', 'Jarabe opcional'],
-                        steps: ['Preparar espresso', 'Enfriar', 'Llenar vaso con hielo', 'Añadir leche y espresso'],
-                        temp: 'Frío',
-                        difficulty: 'Fácil'
+                        ingredients: ['240ml cold milk', '60ml espresso', 'Ice', 'Optional syrup'],
+                        steps: ['Prepare espresso', 'Cool down', 'Fill glass with ice', 'Add milk and espresso'],
+                        temp: 'Cold',
+                        difficulty: 'Easy'
                     },
                     {
                         name: 'Frappé',
-                        ingredients: ['180ml café frío', '120ml leche', 'Hielo', '30ml jarabe', 'Crema batida'],
-                        steps: ['Licuar café, leche, hielo y jarabe', 'Servir en vaso alto', 'Decorar con crema'],
-                        temp: 'Frío',
-                        difficulty: 'Medio'
+                        ingredients: ['180ml cold coffee', '120ml milk', 'Ice', '30ml syrup', 'Whipped cream'],
+                        steps: ['Blend coffee, milk, ice and syrup', 'Serve in tall glass', 'Decorate with cream'],
+                        temp: 'Cold',
+                        difficulty: 'Medium'
                     },
                     {
                         name: 'Affogato',
-                        ingredients: ['60ml espresso caliente', '1 bola helado vainilla'],
-                        steps: ['Colocar helado en taza', 'Preparar espresso', 'Verter sobre helado', 'Servir inmediatamente'],
-                        temp: 'Frío',
-                        difficulty: 'Fácil'
+                        ingredients: ['60ml hot espresso', '1 scoop vanilla ice cream'],
+                        steps: ['Place ice cream in cup', 'Prepare espresso', 'Pour over ice cream', 'Serve immediately'],
+                        temp: 'Cold',
+                        difficulty: 'Easy'
                     },
                     {
                         name: 'Iced Americano',
-                        ingredients: ['60ml espresso', '180ml agua fría', 'Hielo'],
-                        steps: ['Preparar espresso', 'Llenar vaso con hielo', 'Añadir agua fría', 'Verter espresso'],
-                        temp: 'Frío',
-                        difficulty: 'Fácil'
+                        ingredients: ['60ml espresso', '180ml cold water', 'Ice'],
+                        steps: ['Prepare espresso', 'Fill glass with ice', 'Add cold water', 'Pour espresso'],
+                        temp: 'Cold',
+                        difficulty: 'Easy'
                     }
                 ]
             };
@@ -603,11 +610,11 @@
             };
 
             const getRatioStrength = () => {
-                if (customRatio < 12) return { text: 'Intenso', color: 'text-red-400', bg: 'bg-red-500/20' };
-                if (customRatio < 14) return { text: 'Fuerte', color: 'text-orange-400', bg: 'bg-orange-500/20' };
-                if (customRatio < 16) return { text: 'Equilibrado', color: 'text-green-400', bg: 'bg-green-500/20' };
-                if (customRatio < 18) return { text: 'Suave', color: 'text-blue-400', bg: 'bg-blue-500/20' };
-                return { text: 'Muy Suave', color: 'text-purple-400', bg: 'bg-purple-500/20' };
+                if (customRatio < 12) return { text: 'Intense', color: 'text-red-400', bg: 'bg-red-500/20' };
+                if (customRatio < 14) return { text: 'Strong', color: 'text-orange-400', bg: 'bg-orange-500/20' };
+                if (customRatio < 16) return { text: 'Balanced', color: 'text-green-400', bg: 'bg-green-500/20' };
+                if (customRatio < 18) return { text: 'Mild', color: 'text-blue-400', bg: 'bg-blue-500/20' };
+                return { text: 'Very Mild', color: 'text-purple-400', bg: 'bg-purple-500/20' };
             };
 
             const strength = getRatioStrength();
@@ -1174,6 +1181,24 @@
                                 </div>
                             </div>
                         )}
+                    </div>
+                    
+                    {/* Footer */}
+                    <div className="mt-12 pb-8 text-center">
+                        <div className="inline-flex items-center space-x-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+                            <span className="text-sm text-gray-300">Brewed with</span>
+                            <span className="text-red-400 animate-pulse">❤️</span>
+                            <span className="text-sm text-gray-300">by</span>
+                            <a 
+                                href="https://github.com/carloshdez90" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="text-amber-400 hover:text-amber-300 transition-colors font-medium"
+                            >
+                                @charlie
+                            </a>
+                            <span className="text-amber-500">☕</span>
+                        </div>
                     </div>
                 </div>
             );
